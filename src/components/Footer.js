@@ -8,7 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the website name to receive promotional emails
+          Join the MindWorks to receive promotional emails
         </p>
         <p className='footer-subscription-text'>
           You can unsubscribe at any time.
@@ -64,11 +64,11 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              Website Name
+              MindWorks
               <i class='fab fa-typo3' />
             </Link>
           </div>
-          <small class='website-rights'>Website name @ 2023</small>
+          <small class='website-rights'>MindWorks @ 2023</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
