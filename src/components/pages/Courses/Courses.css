@@ -1,0 +1,259 @@
+.course-catalog {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.search-bar {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 40px 10px 50px; /* Adjust padding to accommodate icons and space */
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.search-bar .search-icon,
+.search-bar .clear-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #888;
+  cursor: pointer;
+}
+
+.search-bar .search-icon {
+  left: 10px;
+}
+
+.search-bar .clear-icon {
+  right: 10px;
+  /* display: ${({ searchTerm }) => (searchTerm ? 'block' : 'none')};  */ /* Hide clear icon when search term is empty */
+}
+
+.no-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.no-results-image {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.no-results-message {
+  font-size: 18px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: stretch;
+  align-items: stretch;
+  /* max-height: 80vh; /* Set maximum height */
+  /* overflow-y: auto; /* Add scrollbars if needed */
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.course-card.selected {
+  background-color: #f1f1f1;
+}
+
+.course-cover {
+  width: 100%;
+  height: 245px; /* change this accordingly for image */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.course-info {
+  margin-bottom: 10px;
+}
+
+.course-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.course-instructor {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.course-duration,
+.course-level,
+.course-price {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.selected-course-details {
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #f1f1f1;
+}
+
+.selected-course-details h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.selected-course-details p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.enroll-button {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.enroll-button:hover {
+  background-color: #3367d6;
+}
+
+.course-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.add-to-cart-button,
+.wishlist-button {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover,
+.wishlist-button:hover {
+  background-color: #ddd;
+}
+
+.add-to-cart-icon,
+.wishlist-icon {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.cart-icon:before {
+  content: "\f07a"; /* Font Awesome cart icon */
+  font-family: "Font Awesome 5 Free";
+  /* color: #4285f4; */
+}
+
+.wishlist-icon:before {
+  content: "\f004"; /* Font Awesome heart icon */
+  font-family: "Font Awesome 5 Free";
+  color: rgb(255, 0, 0);
+}
+
+.add-to-cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-to-cart-button .cart-icon {
+  margin-right: 5px; /* Adjust the margin as per your preference */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.page-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.page-item:hover {
+  background-color: #f8f8f8;
+}
+
+@media screen and (max-width: 600px) {
+  .course-list {
+    grid-template-columns: 1fr;
+  }
+  .course-cover {
+    height: 300px;
+  }
+  .add-to-cart-button,
+  .wishlist-button {
+    padding: 10px 40px;
+  }
+}

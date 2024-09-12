@@ -1,0 +1,59 @@
+@media screen and (min-width: 1px)
+{
+  .SignUp {
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: #242424;
+    background-color: #242424;
+  }
+  
+  .auth-form-container, .login-form, .register-form
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-form-container
+  { 
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+    background-color: white;
+  }
+  
+  label
+  {
+    text-align: left;
+    padding: 0.25rem 0;
+  }
+  
+  input
+  {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #242424;
+  }
+  
+  button
+  {
+    border: none;
+    background-color: #242424;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .lnk-btn
+  {
+    background: none;
+    color: #242424;
+    text-decoration: underline;
+  }
+}
