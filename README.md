@@ -93,9 +93,3 @@ The application should now be accessible at `http://localhost:3000`.
 4. Create a pull request with a detailed description of your changes.
 
 ---
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
